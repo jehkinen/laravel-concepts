@@ -24,7 +24,7 @@ enum FrontendAppRoutes: string
 
     public function getUrl(array $params = []): string
     {
-        $baseUrl = 'https://app.example.io'; // URL from your env for e.g config('frontend_url')
+        $baseUrl = config('frontend_url'); // URL from your env for e.g config('frontend_url')
         $path = $this->replaceParams($this->value, $params, $this->requiredParams());
 
         return "{$baseUrl}/{$path}";

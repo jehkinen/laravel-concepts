@@ -6,7 +6,8 @@ Very often, you need to send emails and notifications containing links to the fr
 from the backend. 
 This approach helps manage frontend URLs and parameters in one clean and easy-to-maintain place.
 
-🔹 It ensures consistency, security, and scalability while keeping URLs simple and avoiding hardcoded links.
+### 🐸 **Benefits**
+It ensures consistency, security, and scalability while keeping URLs simple and avoiding hardcoded links.
 
 ```php
 $paymentSuccessUrl = FrontendAppRoutes::PAYMENT_SUCCESS_URL->getUrl([
