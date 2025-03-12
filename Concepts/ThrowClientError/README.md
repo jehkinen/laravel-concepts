@@ -1,9 +1,10 @@
 ### ThrowClientErrorTrait
 
 ### ✨ Why Use It?
-Sometimes validation needs to happen inside services instead of request classes.
-Or even validation placed in requests classes you need to custom logic in
-This trait helps handle validation errors properly, ensuring the client gets a **422 error** when needed.
+Sometimes, validation needs to be implemented inside services instead of request classes.
+Even when validation is placed in request classes, you may need to add custom logic for it.
+This trait helps handle validation errors properly, ensuring the client gets a 422 error when needed.
+
 
 ## Usage
 ### Throwing a Validation Error
