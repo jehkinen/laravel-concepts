@@ -1,13 +1,13 @@
 🎯 Dynamic Validation with Factory & Custom Validators
 
-✨ Why Use It?
+### ✨ Why Use It?
 
 When working with different domain-specific models, validation often requires both shared and type-specific rules.
 Instead of cluttering the request class, we delegate validation logic to specialized validators, ensuring better scalability and maintainability.
 
 We’ll consider this approach using product types as an example.
 
-🐸 Benefits
+### 🐸 **Benefits**
 - Ensures clean and structured validation logic.
 - Allows scalable and flexible validation for different entity types.
 - Keeps request classes lightweight by offloading validation to dedicated classes.
@@ -42,7 +42,5 @@ class ProductRequest extends FormRequest
 ```
 
 - ***Base request validation*** ensures all products follow common rules.
-
 - ***Factory pattern*** dynamically selects the appropriate validator.
-
 - ***Each validator*** encapsulates its own validation logic, keeping the request class clean.
