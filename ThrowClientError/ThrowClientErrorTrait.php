@@ -1,6 +1,6 @@
 <?php
 
-namespace Concepts;
+namespace Concepts\ThrowClientError;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Validation\ValidationException;
@@ -14,7 +14,8 @@ trait ThrowClientErrorTrait
         ]);
     }
 
-    public function throwOrReport(\Throwable $throwable)
+
+    public function throwOrReport(\Throwable $throwable): void
     {
         if (App::environment('local', 'testing') || App::hasDebugModeEnabled()) {
             throw $throwable;

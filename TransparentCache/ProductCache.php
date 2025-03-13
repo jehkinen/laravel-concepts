@@ -1,6 +1,6 @@
 <?php
 
-namespace Concepts;
+namespace Concepts\TransparentCache;
 
 use Illuminate\Support\Facades\Cache;
 

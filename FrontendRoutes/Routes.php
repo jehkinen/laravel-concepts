@@ -1,8 +1,8 @@
 <?php
 
-namespace Concepts;
+namespace Concepts\FrontendRoutes;
 
-enum FrontendAppRoutes: string
+enum Routes: string
 {
     case EMAIL_CONFIRMATION = '/auth/email/confirmation/{token}';
     case PAYMENT_SUCCESS_URL = '{username}/{productId}/{orderId}';
