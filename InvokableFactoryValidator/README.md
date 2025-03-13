@@ -36,7 +36,8 @@ class ProductRequest extends FormRequest
     {
         $productTypeEnum = ProductType::from($productType);
         $validatorClass = ProductTypeValidatorFactory::build($productTypeEnum);
-        (new $validatorClass())->validate($this);
+        $validator = new $validatorClass();
+        $validator($this);
     }
 }
 ```
